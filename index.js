@@ -37,22 +37,29 @@ function PlayGame() {
     computerInput = Math.floor((Math.random() * 100) % 3)
     console.log(computerInput)
 
+    text = document.getElementById("result")
+
     if (userInput == computerInput) {
         console.log("Draw")
+        text.innerText = "Draw"
     } else if (userInput == 0 && computerInput == 2) {
         // USER: ROCK
         // COMPUTER: SCISSOR
         console.log("User wins")
+        text.innerText = "User wins"
     } else if (userInput == 1 && computerInput == 0) {
         // USER: PAPER
         // COMPUTER: ROCK
         console.log("User wins")
+        text.innerText = "User wins"
     } else if (userInput == 2 && computerInput == 1) {
         // USER: SCISSOR
         // COMPUTER: PAPER
         console.log("User wins")
+        text.innerText = "User wins"
     } else {
         console.log("Computer wins")
+        text.innerText = "Computer wins"
     }
-    
+
 }
