@@ -54,6 +54,5 @@ function PlayGame() {
     } else {
         console.log("Computer wins")
     }
-
-
+    
 }
