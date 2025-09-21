@@ -1,0 +1,14 @@
+ #red-front { color: brown; }
+ .blue { color: blue;}
+
+ .focus-text:focus {
+  border-color: #4f46e5 !important;
+  background-color: rgb(12, 12, 255) !important;
+  outline: none !important;
+ }
+
+
+ .hover-text { color: darkorchid;
+ }
+ .hover-text:hover { color: darkgreen;
+ }
