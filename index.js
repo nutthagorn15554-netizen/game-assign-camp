@@ -30,6 +30,14 @@ function CompareUserAndComputerInput() {
 
 }
 
+function Readname() {
+    focustext = document.getElementById("focus-text").value
+    text1 = document.getElementById("nameR")
+    console.log(focustext)
+    text1.innerText = "complete"
+    
+}
+
 function PlayGame() {
     userInput = document.getElementById("user-input").value
     console.log(userInput)
@@ -46,20 +54,20 @@ function PlayGame() {
         // USER: ROCK
         // COMPUTER: SCISSOR
         console.log("User wins")
-        text.innerText = "User wins"
+        text.innerText = (focustext+"wins")
     } else if (userInput == 1 && computerInput == 0) {
         // USER: PAPER
         // COMPUTER: ROCK
         console.log("User wins")
-        text.innerText = "User wins"
+        text.innerText = (focustext+"wins")
     } else if (userInput == 2 && computerInput == 1) {
         // USER: SCISSOR
         // COMPUTER: PAPER
         console.log("User wins")
-        text.innerText = "User wins"
+        text.innerText = (focustext+"wins")
     } else {
         console.log("Computer wins")
-        text.innerText = "Computer wins"
+        text.innerText = (focustext+"lose")
     }
 
 }
