@@ -1,3 +1,5 @@
-#border{
-    border: 1px solid #000000 !important;
+#name{
+    color: black;
+    background-color: aquamarine;
+    border: 2px solid black;
 }
