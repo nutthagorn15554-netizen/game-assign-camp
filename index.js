@@ -46,28 +46,34 @@ function PlayGame() {
     console.log(computerInput)
 
     text = document.getElementById("result")
+    text2 = document.getElementById("bot")
 
     if (userInput == computerInput) {
         console.log("Draw")
+        text2.innerText = ("Bot choose "+computerInput)
         text.innerText = "Draw"
     } else if (userInput == 0 && computerInput == 2) {
         // USER: ROCK
         // COMPUTER: SCISSOR
         console.log("User wins")
-        text.innerText = (focustext+"wins")
+        text2.innerText = ("Bot choose "+computerInput)
+        text.innerText = (focustext+" wins")
     } else if (userInput == 1 && computerInput == 0) {
         // USER: PAPER
         // COMPUTER: ROCK
         console.log("User wins")
-        text.innerText = (focustext+"wins")
+        text2.innerText = ("Bot choose "+computerInput)
+        text.innerText = (focustext+" wins")
     } else if (userInput == 2 && computerInput == 1) {
         // USER: SCISSOR
         // COMPUTER: PAPER
         console.log("User wins")
-        text.innerText = (focustext+"wins")
+        text2.innerText = ("Bot choose "+computerInput)
+        text.innerText = (focustext+" wins")
     } else {
         console.log("Computer wins")
-        text.innerText = (focustext+"lose")
+        text2.innerText = ("Bot choose "+computerInput)
+        text.innerText = (focustext+" lose")
     }
 
 }
